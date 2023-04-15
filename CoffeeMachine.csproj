@@ -49,7 +49,7 @@
     <Compile Include="Recipes\RecipeList.cs" />
     <Compile Include="Entities\ResourceContainer.cs" />
     <Compile Include="UI\ConsoleUI.cs" />
-    <Compile Include="UI\UI.cs" />
+    <Compile Include="UI\IUI.cs" />
     <Compile Include="Machine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
