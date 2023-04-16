@@ -9,14 +9,11 @@ namespace CoffeeMachine.UI
 {
     class ConsoleUI : IUI
     {
-        public delegate Coffee Handler();
-        public Handler Started;
         private Machine machine;
         public List<Coffee> orders = new List<Coffee>();
         public ConsoleUI(Machine machine)
         {
             this.machine = machine;
-            Started += machine.MakeCoffee;
             machine.Error += Error;
             machine.ErrorText += Error;
             machine.Ready += Ready;

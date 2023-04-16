@@ -75,6 +75,9 @@ namespace CoffeeMachine
             }
             catch (Exception e)
             {
+                milk = milkClone;
+                water = waterClone;
+                grains = grainsClone;
                 Error();
                 throw e;
             }
